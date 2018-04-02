@@ -1,0 +1,87 @@
+
+html {
+  box-sizing: border-box;
+  height: 100%;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+.clearfix:before,
+.clearfix:after{
+  content: '';
+  display: table;
+}
+.clearfix:after{
+  clear: both;
+}
+*{
+  margin: 0;
+  padding: 0;
+
+}
+body{
+  height: 100%;
+  font-family: arial,helvetica,sans-serif;
+  background: #c72200; /* Old browsers */
+  background: -moz-linear-gradient(top, #c72200 0%, #ff6600 25%, #ea2803 81%, #750000 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #c72200 0%,#ff6600 25%,#ea2803 81%,#750000 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #c72200 0%,#ff6600 25%,#ea2803 81%,#750000 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c72200', endColorstr='#750000',GradientType=0 ); /* IE6-9 */
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+header{
+  text-align: center;
+  padding: 20px 0 ;
+}
+div.contenedor {
+  width: 800px;
+  margin: 0 auto;
+}
+div.hero img{
+  width: 100%;
+}
+h2{
+  text-align: center;
+  color: white;
+  margin: 30px 0 ;
+  text-shadow: 10px 10px 10px black;
+  text-transform: uppercase;
+}
+ul.listaproductos {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+ul.listaproductos li {
+  float: left;
+  width: 50%;
+  padding: 20px;
+  text-align: center;
+
+}
+ul.listaproductos li:nth-child(2n+1){
+  clear: both;
+}
+ul.listaproductos li img{
+  border: 10px solid rgba(255, 206, 0, 0.8);
+}
+ul.listaproductos li p{
+  margin: 10px 0;
+  font-weight: bold;
+  font-size: 20px;
+}
+ul.listaproductos li p span{
+  color: rgba(255, 206, 0, 0.8);
+  font-size: 25px;
+  margin: 0 5px;
+}
+ul.listaproductos li a {
+  background-color: rgba(255, 206, 0, 0.8);
+  text-decoration: none;
+  padding: 10px 30px;
+  margin: 20px 0;
+  display: inline-block;
+  color: white;
+  text-transform: uppercase;
+}
